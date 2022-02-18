@@ -1,0 +1,32 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Foods List{% endblock %}
+
+{% block content %}
+    <table>
+        <th>FoodItem</th>
+        <th>Cabs</th>
+        <th>Proteins</th>
+        <th>Fats</th>
+        <th>Calories</th>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        {% for food in foods%}
+        <tr>
+            <td>{{food.fooditem}}</td>
+            <td>{{food.cabs}}</td>
+            <td>{{food.proteins}}</td>
+            <td>{{food.fats}}</td>
+            <td>{{food.calories}}</td>
+        </tr>
+     </table>
+    
+     </table>
+    
+{% endblock %}

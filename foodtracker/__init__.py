@@ -19,7 +19,7 @@ def create_app():
     app.register_blueprint(auth,url_prefix='/auth')
     app.register_blueprint(views,url_prefix='/')
 
-    if not path.exists("foodtracker/" + DB_NAME):
-        db.create_all(app=app)
+    # if not path.exists("foodtracker/" + DB_NAME):
+    db.create_all(app=app)
     
     return app

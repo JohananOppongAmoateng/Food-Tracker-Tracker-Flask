@@ -7,6 +7,8 @@ name = "pypi"
 flask = "*"
 flask-login = "*"
 flask-sqlalchemy = "*"
+flask-wtf = "*"
+wtforms = "*"
 
 [dev-packages]
 
